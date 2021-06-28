@@ -9,7 +9,7 @@ body {
 	line-height: 18px;
 	letter-spacing: 0.6px;
 	color: #242121;
-	
+
 }
 
 a {
@@ -116,7 +116,7 @@ a {
 	letter-spacing: 0.6px;
 	color: #0D302C;
 	margin-top: auto;
-	
+
 }
 
 .header__subtitle {
@@ -138,12 +138,19 @@ a {
 }
 
 .about__text-inner {
-
-padding-bottom: 200px;
+	display: flex;
+	align-items: space-between;
+	padding-bottom: 200px;
+	min-height: 350px;
 }
 
-.about__text-itemm {
-	display: flex;
-	
+.about__text-item {
+	margin-right: 120px;
+}
+
+.about__text-item p {
+	padding-bottom: 30px;
+	min-height: 120px;
+	max-width: 480px;
 }
 
