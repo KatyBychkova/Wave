@@ -138,33 +138,13 @@ a {
 }
 
 .about__text-inner {
-/* max-width: 1200px;
+max-width: 1200px;
 display: grid;
 grid-gap: 30px 120px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: repeat(4, 1fr);
-grid-auto-flow: column; */
+grid-auto-flow: column;
 padding-bottom: 200px;
-
-/* display: flex;
-flex-direction: row;
-flex-wrap: wrap; */
-
-display: table-row;
 }
 
-.about__text-item  {
-/* flex: 0 1 480px; */
-padding-bottom: 30px;
-margin-right: 120px;
-/* flex: 1 1 auto;
-min-height: 120px; */
-display:table-cell;
-  height: 6em;
-}
-
-/* .about__text-inner p {
-	padding-bottom: 30px;
-	margin-right: 120px;
-} */
 
