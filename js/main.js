@@ -21,13 +21,13 @@ $(function(){
     nextArrow : '<button type="button" class="slick-next"><img src="images/arrow-right.svg" alt="стрелка вправо"></button>'
   });
 
-  $('.gallery__item').slice(0, 6).show()
-  $('.gallery__more-btn').on('click', function(){
-    $('.gallery__item:hidden').slice(0, 6).slideDown()
-    // if($('.gallery__content-list:hidden').length = 0) {
-    //   $('.gallery__more-btn').fadeOut('slow')
-    // }
-  })
+  // $('.gallery__content').slice(0, 6).show()
+  // $('.gallery__more-link').on('click', function(){
+  //   $('.gallery__content:hidden').slice(0, 6).slideDown()
+  //   // if($('.gallery__content-list:hidden').length = 0) {
+  //   //   $('.gallery__more-btn').fadeOut('slow')
+  //   // }
+  // })
 
  
 });

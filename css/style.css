@@ -318,11 +318,9 @@ a {
 	
 }
 
-/* .gallery__content .gallery__content-list .gallery__item{
-	display: none;
-} */
 
-ul.gallery__content .gallery__item {
+
+div.gallery__content .gallery__item {
 	display: inline-block;
 	margin: 0 0 32px 0;
 	position: relative;
@@ -331,6 +329,13 @@ ul.gallery__content .gallery__item {
 .gallery__content .gallery__item img {
 	width: 100%;
 }
+.cont .row .col {
+    display: none;
+}
+
+/* .gallery__inner .gallery__content .gallery__item {
+	display: none;
+} */
 
 .gallery__more-link {
 	padding: 23px 91px 24px;
