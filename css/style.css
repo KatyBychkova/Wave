@@ -318,6 +318,13 @@ a {
 	
 }
 
+.gallery__content-new {
+	columns: 1;
+	column-gap: 38px;
+	margin: 0 -40px 0 -40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
 
 
 div.gallery__content .gallery__item {

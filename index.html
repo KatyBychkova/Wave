@@ -379,6 +379,7 @@
         $(".col").slice(0, 1).show()
         $(".btn").on("click", function(){
             $(".col:hidden").slice(0, 1).slideDown()
+            $('.gallery__content').toggleClass('gallery__content-new')
             if ($(".col:hidden").length == 0) {
                 $(".btn").fadeOut('slow')
             }
