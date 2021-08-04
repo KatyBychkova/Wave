@@ -9,7 +9,6 @@ body {
 	line-height: 18px;
 	letter-spacing: 0.6px;
 	color: #242121;
-
 }
 
 a {
@@ -20,6 +19,10 @@ a {
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+.section-page {
+	padding: 200px 0;
 }
 
 .title {
@@ -129,14 +132,12 @@ a {
 }
 
 .about__title {
-	padding-top: 189px;
 	padding-bottom: 96px;
 }
 
 .about__text-inner {
 	display: flex;
 	align-items: space-between;
-	padding-bottom: 170px;
 	min-height: 350px;
 }
 
@@ -254,7 +255,6 @@ a {
 
 .best__inner {
 	display: flex;
-	margin-bottom: 200px;
 }
 
 .best__item-1 {
@@ -277,10 +277,6 @@ a {
 .school__text p {
 	padding-bottom: 30px;
 }
-
-
-.gallery {}
-
 
 .gallery__title {
 	margin-bottom: 210px;
@@ -308,14 +304,12 @@ a {
 	color: #00B2A0;
 }
 
-
 .gallery__content {
 	columns: 2;
 	column-gap: 38px;
 	margin: 0 -40px 0 -40px;
 	padding-left: 40px;
 	padding-right: 40px;
-
 }
 
 div.gallery__content .gallery__item {
@@ -391,7 +385,7 @@ div.gallery__content .gallery__item {
 }
 
 .gallery__numbers {
-	padding: 200px 10px;
+	padding: 200px 10px 0;
 }
 
 .gallery__numbers-container {
@@ -423,18 +417,12 @@ div.gallery__content .gallery__item {
 	display: block;
 }
 
-.slider-blog {
-	margin-bottom: 200px;
-}
-
 .slider-blog__title {
 	margin-bottom: 230px;
 }
 
-
 .slider-blog__inner {
-	display: flex;
-	justify-content: center;
+	display: block;
 }
 
 .slider-blog__item {
@@ -452,6 +440,10 @@ div.gallery__content .gallery__item {
 	z-index: 1;
 }
 
+img.slider-blog__item-bg {
+	display: block;
+	margin: 0 auto;
+}
 
 .slider-blog__text {
 	position: absolute;
@@ -509,6 +501,106 @@ div.gallery__content .gallery__item {
 .slick-dots .slick-active button {
 	background-color: #00B2A0;
 }
+
+.team {}
+
+
+.team__inner {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.team__title {
+	margin-bottom: 210px;
+}
+
+.team__item {}
+
+.team__item-img {
+	margin-bottom: 25px;
+}
+
+.team__name {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.team__position {
+	font-weight: normal;
+font-size: 14px;
+}
+
+
+.pricing {
+	background-color: #F8F8F8;
+}
+ .pricing__title {
+	 margin-bottom: 180px;
+ } 
+
+
+.pricing__inner {
+	display: flex;
+	justify-content: space-between;
+
+}
+.pricing__item {
+	padding: 45px 43px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+.pricing__item-name {
+text-align: center;
+margin-bottom: 58px;
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 40px;
+color: #01353E;
+}
+.pricing__item-list {
+	flex: 1 1 auto;
+
+}
+
+.pricing__item-list li + li {
+	margin-top: 20px;
+	font-weight: 400;
+}
+.pricing__item-price {
+	font-weight: 400;
+font-size: 36px;
+line-height: 40px;
+color: #01353E;
+margin-top: 60px;
+text-align: center;
+position: relative;
+padding-right: 14px;
+align-self: center;
+
+}
+
+.pricing__item-price  span{
+	font-size: 18px;
+line-height: 22px;
+position: absolute;
+bottom: 9px;
+right: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
