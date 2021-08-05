@@ -351,6 +351,7 @@ div.gallery__content .gallery__item {
 	background-color: #F8F8F8;
 	text-align: center;
 	margin-bottom: 200px;
+	
 }
 
 .blockquote__autor {
@@ -361,10 +362,10 @@ div.gallery__content .gallery__item {
 	line-height: 18px;
 	letter-spacing: 0.6px;
 	color: #242121;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	transform: translateX(300px);
+	display: block;
+    max-width: 850px;
+    text-align: end;
+    margin: 0 auto;
 }
 
 
@@ -416,6 +417,12 @@ div.gallery__content .gallery__item {
 	color: #242121;
 	display: block;
 }
+.slider-blog{
+	max-width: 1920px;
+	margin: 0 auto;
+	
+}
+
 
 .slider-blog__title {
 	margin-bottom: 230px;
@@ -423,13 +430,39 @@ div.gallery__content .gallery__item {
 
 .slider-blog__inner {
 	display: block;
+	
 }
 
-.slider-blog__item {
+
+.slick-prev,
+.slick-next {
+    border: none;
+    background-color: red;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top:100%;
+	transform: translateY(-100%);
+	z-index: 10;
+	width: 100px;
+	height: 100%;
+}
+
+.slick-prev {
+    left: 2%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+
+
+.slider-blog__items {
 	position: relative;
 }
 
-.slider-blog__item::before {
+ .slider-blog__items::before {
 	content: " ";
 	position: absolute;
 	top: 0;
@@ -438,12 +471,19 @@ div.gallery__content .gallery__item {
 	bottom: 0;
 	background-color: rgba(36, 33, 33, 0.5);
 	z-index: 1;
-}
+	display: block;
+	margin: 0 auto;
+	max-width: 1920px;
+} 
 
 img.slider-blog__item-bg {
 	display: block;
 	margin: 0 auto;
 }
+
+
+
+
 
 .slider-blog__text {
 	position: absolute;
@@ -451,7 +491,7 @@ img.slider-blog__item-bg {
 	right: 50%;
 	max-width: 600px;
 	transform: translate(100%, -60%);
-	z-index: 3;
+	z-index: 10;
 }
 
 
@@ -475,6 +515,8 @@ img.slider-blog__item-bg {
 	letter-spacing: 0.6px;
 	color: #FFFFFF;
 }
+
+
 
 .slick-dots {
 	position: absolute;
@@ -592,6 +634,17 @@ position: absolute;
 bottom: 9px;
 right: 0;
 }
+
+
+.map {
+	margin: 200px 0;
+	}
+
+#imgMap {
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
 
 
 

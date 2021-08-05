@@ -17,7 +17,8 @@ $(function(){
 
   $('.slider-blog__inner').slick({
     dots : true,
-    arrows : false
+    prevArrow : '<button type="button" class="slick-prev"></button>',
+    nextArrow : '<button type="button" class="slick-next"></button>'
    
   });
 
