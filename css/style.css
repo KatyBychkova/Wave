@@ -1,936 +1,1038 @@
-                                                                                                                                                                        body {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 300;
-                                                                                                                                                                    font-size: 14px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                a {
-                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .container {
-                                                                                                                                                                    max-width: 1220px;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                    padding: 0 10px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .section-page {
-                                                                                                                                                                    padding: 200px 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .title {
-                                                                                                                                                                    font-family: 'Raleway', sans-serif;
-                                                                                                                                                                    font-weight: 600;
-                                                                                                                                                                    font-size: 48px;
-                                                                                                                                                                    line-height: 56px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #01353E;
-                                                                                                                                                                    text-transform: uppercase;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .title span {
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                    padding: 0 48px 0 0;
-                                                                                                                                                                    display: inline-block;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .title span::after {
-                                                                                                                                                                    content: "";
-                                                                                                                                                                    background-image: url(../images/streak.svg);
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    width: 48px;
-                                                                                                                                                                    height: 85px;
-                                                                                                                                                                    top: 15px;
-                                                                                                                                                                    right: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header {
-                                                                                                                                                                    background-image: url(../images/header/header-bg.jpg);
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: cover;
-                                                                                                                                                                    /* height: 100vh; */
-                                                                                                                                                                    background-position-y: bottom;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header__top-inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                    padding-top: 50px;
-                                                                                                                                                                    padding-bottom: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                img.logo-img {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    height: 65px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    margin-right: 70px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu__btn {
-                                                                                                                                                                    display: none;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu__list {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: center;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu__list-item+.menu__list-item {
-                                                                                                                                                                    margin-left: 45px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu__list-link {
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 28px;
-                                                                                                                                                                    color: #FFFFFF;
-                                                                                                                                                                    padding-bottom: 5px;
-                                                                                                                                                                    transition: all 0.3s;
-                                                                                                                                                                    border-bottom: 1px solid transparent;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .menu__list-link:hover {
-                                                                                                                                                                    border-bottom: 1px solid #00B2A0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header__content-inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                    min-height: calc(100vh - 135px);
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header__title {
-                                                                                                                                                                    font-family: 'Raleway', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 700;
-                                                                                                                                                                    font-size: 200px;
-                                                                                                                                                                    line-height: 235px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #0D302C;
-                                                                                                                                                                    margin-top: auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header__subtitle {
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 28px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #000000;
-                                                                                                                                                                    margin-bottom: auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .header__icon {
-                                                                                                                                                                    margin-bottom: 93px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .about__title {
-                                                                                                                                                                    padding-bottom: 96px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .about__text-inner {
-                                                                                                                                                                    column-count: 2;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .about__text-inner p {
-                                                                                                                                                                    padding-bottom: 30px;
-                                                                                                                                                                    min-height: 120px;
-                                                                                                                                                                    max-width: 480px;
-                                                                                                                                                                }
-                                                                                                                                                                /* .about__text-inner {
-                                                                                                                                    display: flex;
-                                                                                                                                    min-height: 350px;
-                                                                                                                                }
-                                                                                                                                
-                                                                                                                                .about__text-item {
-                                                                                                                                    margin-right: 120px;
-                                                                                                                                }
-                                                                                                                                
-                                                                                                                                .about__text-item p {
-                                                                                                                                    padding-bottom: 30px;
-                                                                                                                                    min-height: 120px;
-                                                                                                                                    max-width: 480px;
-                                                                                                                                }
-                                                                                                                                 */
-                                                                                                                                                                
-                                                                                                                                                                .school {
-                                                                                                                                                                    background-color: #F8F8F8;
-                                                                                                                                                                    padding: 200px 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__title {
-                                                                                                                                                                    padding-bottom: 100px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__items {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item {
-                                                                                                                                                                    max-width: 350px;
-                                                                                                                                                                    margin-bottom: 100px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 28px;
-                                                                                                                                                                    text-transform: uppercase;
-                                                                                                                                                                    padding-left: 60px;
-                                                                                                                                                                    padding-bottom: 10px;
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                    max-width: 220px;
-                                                                                                                                                                    min-height: 66px;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title--liv {
-                                                                                                                                                                    padding-bottom: 19px;
-                                                                                                                                                                    padding-left: 65px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title::before {
-                                                                                                                                                                    content: "";
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    width: 50px;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    top: 0;
-                                                                                                                                                                    left: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title--liv::before {
-                                                                                                                                                                    background-image: url(../images/school/living-icon.svg);
-                                                                                                                                                                    width: 55px;
-                                                                                                                                                                    height: 50px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title--fly::before {
-                                                                                                                                                                    background-image: url(../images/school/flight-icon.svg);
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__item-title--training::before {
-                                                                                                                                                                    background-image: url(../images/school/training-icon.svg);
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__info-item {
-                                                                                                                                                                    margin-bottom: 10px;
-                                                                                                                                                                    width: 346px;
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__info-item img {
-                                                                                                                                                                    display: inline-block;
-                                                                                                                                                                    object-fit: cover;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__info-item span {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    padding-left: 3px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best {
-                                                                                                                                                                    background-image: url(../images/best/best-bg.jpg);
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: 50%;
-                                                                                                                                                                    background-position: top right;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best__title {
-                                                                                                                                                                    text-align: left;
-                                                                                                                                                                    padding: 200px 0 100px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best__inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best__item-1 {
-                                                                                                                                                                    flex: 0 0 50%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best__text {
-                                                                                                                                                                    max-width: 509px;
-                                                                                                                                                                    padding-bottom: 140px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .best__text p {
-                                                                                                                                                                    padding-bottom: 30px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__text {
-                                                                                                                                                                    max-width: 600px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .school__text p {
-                                                                                                                                                                    padding-bottom: 30px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__title {
-                                                                                                                                                                    margin-bottom: 210px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__filter-btn {
-                                                                                                                                                                    margin-bottom: 50px;
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__btn {
-                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                    border: none;
-                                                                                                                                                                    background-color: transparent;
-                                                                                                                                                                    cursor: pointer;
-                                                                                                                                                                    margin-right: 20px;
-                                                                                                                                                                    text-transform: uppercase;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .mixitup-control-active {
-                                                                                                                                                                    color: #00B2A0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__content {
-                                                                                                                                                                    columns: 2;
-                                                                                                                                                                    column-gap: 38px;
-                                                                                                                                                                    margin: 0 -40px 0 -40px;
-                                                                                                                                                                    padding-left: 40px;
-                                                                                                                                                                    padding-right: 40px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                div.gallery__content .gallery__item {
-                                                                                                                                                                    display: inline-block;
-                                                                                                                                                                    margin: 0 0 32px 0;
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__content .gallery__item img {
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__more {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    margin: 50px 0 200px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__more-link {
-                                                                                                                                                                    width: 350px;
-                                                                                                                                                                    height: 70px;
-                                                                                                                                                                    padding: 20px 90px;
-                                                                                                                                                                    border: #C4C4C4 solid 1px;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    text-transform: uppercase;
-                                                                                                                                                                    background-color: transparent;
-                                                                                                                                                                    cursor: pointer;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__more-link:hover {
-                                                                                                                                                                    border: #999999 solid 2px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__more-link:active {
-                                                                                                                                                                    font-size: 22px;
-                                                                                                                                                                    padding: 18px 88px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .blockquote {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: italic;
-                                                                                                                                                                    font-weight: normal;
-                                                                                                                                                                    font-size: 36px;
-                                                                                                                                                                    line-height: 40px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    padding: 80px 10px;
-                                                                                                                                                                    background-color: #F8F8F8;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    margin-bottom: 200px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .blockquote__autor {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: italic;
-                                                                                                                                                                    font-weight: 300;
-                                                                                                                                                                    font-size: 14px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    max-width: 850px;
-                                                                                                                                                                    text-align: end;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__video-container {
-                                                                                                                                                                    background-image: url(../images/gallery/video-bg.jpg);
-                                                                                                                                                                    background-repeat: no-repeat;
-                                                                                                                                                                    background-size: cover;
-                                                                                                                                                                    background-position: center center;
-                                                                                                                                                                    width: 1200px;
-                                                                                                                                                                    height: 600px;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: center;
-                                                                                                                                                                    align-items: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__video-img {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__numbers {
-                                                                                                                                                                    padding: 200px 10px 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__numbers-container {
-                                                                                                                                                                    max-width: 700px;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__numbers-item {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 700;
-                                                                                                                                                                    font-size: 64px;
-                                                                                                                                                                    line-height: 75px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #01353E;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .gallery__numbers-item span {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 300;
-                                                                                                                                                                    font-size: 14px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                    display: block;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog {
-                                                                                                                                                                    max-width: 1920px;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__title {
-                                                                                                                                                                    margin-bottom: 230px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__inner {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-prev,
-                                                                                                                                                                .slick-next {
-                                                                                                                                                                    border: none;
-                                                                                                                                                                    background-color: red;
-                                                                                                                                                                    padding: 0;
-                                                                                                                                                                    cursor: pointer;
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    top: 100%;
-                                                                                                                                                                    transform: translateY(-100%);
-                                                                                                                                                                    z-index: 10;
-                                                                                                                                                                    width: 100px;
-                                                                                                                                                                    height: 100%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-prev {
-                                                                                                                                                                    left: 2%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-next {
-                                                                                                                                                                    right: 2%;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__items {
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__items::before {
-                                                                                                                                                                    content: " ";
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    top: 0;
-                                                                                                                                                                    left: 0;
-                                                                                                                                                                    right: 0;
-                                                                                                                                                                    bottom: 0;
-                                                                                                                                                                    background-color: rgb(36, 33, 33, 0.5);
-                                                                                                                                                                    z-index: 1;
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                    max-width: 1920px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                img.slider-blog__item-bg {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__text {
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    top: 50%;
-                                                                                                                                                                    right: 50%;
-                                                                                                                                                                    max-width: 600px;
-                                                                                                                                                                    transform: translate(100%, -60%);
-                                                                                                                                                                    z-index: 10;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__text-title {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: normal;
-                                                                                                                                                                    font-size: 48px;
-                                                                                                                                                                    line-height: 56px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #FFFFFF;
-                                                                                                                                                                    text-transform: uppercase;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slider-blog__text-descr {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 300;
-                                                                                                                                                                    font-size: 14px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #FFFFFF;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-dots {
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    bottom: 77px;
-                                                                                                                                                                    left: 50%;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    transform: translateX(-50%);
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-dots button {
-                                                                                                                                                                    text-decoration: none;
-                                                                                                                                                                    color: transparent;
-                                                                                                                                                                    width: 15px;
-                                                                                                                                                                    height: 15px;
-                                                                                                                                                                    border-radius: 50%;
-                                                                                                                                                                    border: none;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-dots li+li {
-                                                                                                                                                                    margin-left: 15px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .slick-dots .slick-active button {
-                                                                                                                                                                    background-color: #00B2A0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .team__inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .team__title {
-                                                                                                                                                                    margin-bottom: 210px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .team__item-img {
-                                                                                                                                                                    margin-bottom: 25px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .team__name {
-                                                                                                                                                                    font-weight: bold;
-                                                                                                                                                                    font-size: 18px;
-                                                                                                                                                                    margin-bottom: 5px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .team__position {
-                                                                                                                                                                    font-weight: normal;
-                                                                                                                                                                    font-size: 14px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing {
-                                                                                                                                                                    background-color: #F8F8F8;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__title {
-                                                                                                                                                                    margin-bottom: 180px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    justify-content: space-between;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item {
-                                                                                                                                                                    padding: 45px 43px;
-                                                                                                                                                                    background-color: #fff;
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                    flex-direction: column;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item-name {
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    margin-bottom: 58px;
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 36px;
-                                                                                                                                                                    line-height: 40px;
-                                                                                                                                                                    color: #01353E;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item-list {
-                                                                                                                                                                    flex: 1 1 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item-list li+li {
-                                                                                                                                                                    margin-top: 20px;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item-price {
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 36px;
-                                                                                                                                                                    line-height: 40px;
-                                                                                                                                                                    color: #01353E;
-                                                                                                                                                                    margin-top: 60px;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                    position: relative;
-                                                                                                                                                                    padding-right: 14px;
-                                                                                                                                                                    align-self: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .pricing__item-price span {
-                                                                                                                                                                    font-size: 18px;
-                                                                                                                                                                    line-height: 22px;
-                                                                                                                                                                    position: absolute;
-                                                                                                                                                                    bottom: 9px;
-                                                                                                                                                                    right: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .map {
-                                                                                                                                                                    margin: 200px 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                #imgMap {
-                                                                                                                                                                    max-width: 100%;
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__title {
-                                                                                                                                                                    margin-bottom: 240px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__inner {
-                                                                                                                                                                    display: flex;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form {
-                                                                                                                                                                    align-self: start;
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    width: 50%;
-                                                                                                                                                                    margin-right: 20px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form input::placeholder,
-                                                                                                                                                                .connection__form textarea::placeholder {
-                                                                                                                                                                    max-width: 260px;
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 18px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #00B2A0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form input,
-                                                                                                                                                                .connection__form textarea {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    width: 100%;
-                                                                                                                                                                    font-size: 18px;
-                                                                                                                                                                    border: none;
-                                                                                                                                                                    border-bottom: 2px solid #DADADA;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form input {
-                                                                                                                                                                    padding-bottom: 18px;
-                                                                                                                                                                    margin-bottom: 30px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form textarea {
-                                                                                                                                                                    padding-bottom: 95px;
-                                                                                                                                                                    margin: 50px 0 70px;
-                                                                                                                                                                    min-height: 155px;
-                                                                                                                                                                    resize: none;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form button {
-                                                                                                                                                                    font-family: 'Roboto Condensed', sans-serif;
-                                                                                                                                                                    font-style: normal;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 18px;
-                                                                                                                                                                    letter-spacing: 0.6px;
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                    background-color: #fff;
-                                                                                                                                                                    border: #C4C4C4 solid 1px;
-                                                                                                                                                                    padding: 22px 110px;
-                                                                                                                                                                    cursor: pointer;
-                                                                                                                                                                    transition: all 0.3s;
-                                                                                                                                                                    width: 350px;
-                                                                                                                                                                    height: 70px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form button:hover {
-                                                                                                                                                                    border: #999999 solid 2px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__form button:active {
-                                                                                                                                                                    font-size: 22px;
-                                                                                                                                                                    padding: 20px 107px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__contacts {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    width: 50%;
-                                                                                                                                                                    padding: 50px;
-                                                                                                                                                                    background-color: #F8F8F8;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    line-height: 30px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__contacts p {
-                                                                                                                                                                    max-width: 330px;
-                                                                                                                                                                    margin-bottom: 65px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__contacts p:last-child {
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .connection__contacts span {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer .footer__social {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    padding: 200px 10px;
-                                                                                                                                                                    text-align: center;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__social-list {
-                                                                                                                                                                    display: inline-block;
-                                                                                                                                                                    font-weight: 400;
-                                                                                                                                                                    font-size: 24px;
-                                                                                                                                                                    margin-right: 10px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__social-list a {
-                                                                                                                                                                    color: #242121;
-                                                                                                                                                                    transition: all 0.3s;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__social-list a:hover {
-                                                                                                                                                                    color: #00B2A0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__social-list li:last-child {
-                                                                                                                                                                    margin: 0;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__logo {
-                                                                                                                                                                    display: block;
-                                                                                                                                                                    background-color: #00B2A0;
-                                                                                                                                                                    padding-top: 70px;
-                                                                                                                                                                    padding-bottom: 70px;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                .footer__logo a img {
-                                                                                                                                                                    margin: 0 auto;
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media (max-width: 1620px) {
-                                                                                                                                                                    .best__title {
-                                                                                                                                                                        padding: 100px 0 100px;
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media (max-width: 1420px) {
-                                                                                                                                                                    .best__title {
-                                                                                                                                                                        padding: 100px 0 50px;
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media (max-width: 1270px) {
-                                                                                                                                                                    .best__title {
-                                                                                                                                                                        padding: 70px 0 40px;
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media (max-width: 1160px) {
-                                                                                                                                                                    .title {
-                                                                                                                                                                        font-size: 40px;
-                                                                                                                                                                        line-height: 45px;
-                                                                                                                                                                    }
-                                                                                                                                                                    body {
-                                                                                                                                                                        font-size: 13px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .title span {
-                                                                                                                                                                        padding: 0 40px 0 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    .title span::after {
-                                                                                                                                                                        background-image: url(../images/streak_1160px.svg);
-                                                                                                                                                                        background-repeat: no-repeat;
-                                                                                                                                                                        position: absolute;
-                                                                                                                                                                        width: 40px;
-                                                                                                                                                                        height: 70px;
-                                                                                                                                                                        top: 15px;
-                                                                                                                                                                        right: 0;
-                                                                                                                                                                    }
-                                                                                                                                                                }
-                                                                                                                                                                
-                                                                                                                                                                @media (max-width: 950px) {
-                                                                                                                                                                    .header__top-inner {
-                                                                                                                                                                        padding-top: 25px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .header__content-inner {
-                                                                                                                                                                        min-height: calc(100vh - 110px);
-                                                                                                                                                                    }
-                                                                                                                                                                    .logo {
-                                                                                                                                                                        position: relative;
-                                                                                                                                                                        z-index: 3;
-                                                                                                                                                                    }
-                                                                                                                                                                    nav.menu {
-                                                                                                                                                                        width: 85px;
-                                                                                                                                                                        height: 24px;
-                                                                                                                                                                        margin-right: 0;
-                                                                                                                                                                    }
-                                                                                                                                                                    .menu__list {
-                                                                                                                                                                        position: absolute;
-                                                                                                                                                                        left: 0;
-                                                                                                                                                                        right: 0;
-                                                                                                                                                                        top: 0;
-                                                                                                                                                                        display: block;
-                                                                                                                                                                        text-align: center;
-                                                                                                                                                                        background: rgb(29, 42, 52);
-                                                                                                                                                                        background: -moz-linear-gradient(180deg, rgba(36, 64, 85, 0.9) 52%, rgba(83, 131, 140, 1) 100%);
-                                                                                                                                                                        background: -webkit-linear-gradient(180deg, rgba(29, 42, 52, 0.9) 52%, rgba(83, 131, 140, 1) 100%);
-                                                                                                                                                                        background: linear-gradient(180deg, rgba(29, 42, 52, 0.9) 52%, rgba(83, 131, 140, 1) 100%);
-                                                                                                                                                                        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1d2a34", endColorstr="#53838c", GradientType=1);
-                                                                                                                                                                        transform: translateY(-200%);
-                                                                                                                                                                        transition: all 0.5s;
-                                                                                                                                                                    }
-                                                                                                                                                                    .header__top-inner--active .menu__list {
-                                                                                                                                                                        transform: translateY(0%);
-                                                                                                                                                                    }
-                                                                                                                                                                    button.menu__btn {
-                                                                                                                                                                        font-family: 'Roboto Condensed';
-                                                                                                                                                                        font-style: normal;
-                                                                                                                                                                        font-weight: 400;
-                                                                                                                                                                        font-size: 28px;
-                                                                                                                                                                        letter-spacing: 0.6px;
-                                                                                                                                                                        color: #fff;
-                                                                                                                                                                        text-transform: uppercase;
-                                                                                                                                                                        background-color: transparent;
-                                                                                                                                                                        border: none;
-                                                                                                                                                                        display: block;
-                                                                                                                                                                        position: relative;
-                                                                                                                                                                        z-index: 3;
-                                                                                                                                                                    }
-                                                                                                                                                                    ul.menu__list {
-                                                                                                                                                                        padding: 90px 0 30px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .menu__list-item+.menu__list-item {
-                                                                                                                                                                        margin-left: 0;
-                                                                                                                                                                        margin-top: 45px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .menu__list-link {
-                                                                                                                                                                        font-size: 28px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .header__title {
-                                                                                                                                                                        font-size: 150px;
-                                                                                                                                                                        line-height: 150px;
-                                                                                                                                                                    }
-                                                                                                                                                                    .header__subtitle {
-                                                                                                                                                                        font-size: 22px;
-                                                                                                                                                                        line-height: 26px;
-                                                                                                                                                                    }
-                                                                                                                                                                    a.header__icon {
-                                                                                                                                                                        margin-bottom: 10px;
-                                                                                                                                                                    }
-                                                                                                                                                                    @media (max-width: 565px) {
-                                                                                                                                                                        .header__title {
-                                                                                                                                                                            font-size: 130px;
-                                                                                                                                                                            line-height: 150px;
-                                                                                                                                                                        }
-                                                                                                                                                                        .header__subtitle {
-                                                                                                                                                                            font-size: 20px;
-                                                                                                                                                                            line-height: 24px;
-                                                                                                                                                                        }
-                                                                                                                                                                        button.menu__btn {
-                                                                                                                                                                            font-weight: 400;
-                                                                                                                                                                            font-size: 22px;
-                                                                                                                                                                        }
-                                                                                                                                                                        nav.menu {
-                                                                                                                                                                            width: 62px;
-                                                                                                                                                                        }
-                                                                                                                                                                        @media (max-width: 470px) {
-                                                                                                                                                                            .header__title {
-                                                                                                                                                                                font-size: 96px;
-                                                                                                                                                                                line-height: 114px;
-                                                                                                                                                                            }
-                                                                                                                                                                            .header__subtitle {
-                                                                                                                                                                                font-size: 14px;
-                                                                                                                                                                                line-height: 24px;
-                                                                                                                                                                            }
-                                                                                                                                                                            .menu__list-link {
-                                                                                                                                                                                font-size: 24px;
-                                                                                                                                                                                line-height: 30px;
-                                                                                                                                                                            }
-                                                                                                                                                                            .menu__list-item+.menu__list-item {
-                                                                                                                                                                                margin-left: 0;
-                                                                                                                                                                                margin-top: 25px;
-                                                                                                                                                                            }
-                                                                                                                                                                        }
-                                                                                                                                                                        @media (max-width: 320px) {
-                                                                                                                                                                            .header__title {
-                                                                                                                                                                                font-size: 86px;
-                                                                                                                                                                                line-height: 108px;
-                                                                                                                                                                            }
-                                                                                                                                                                            .header__subtitle {
-                                                                                                                                                                                font-size: 14px;
-                                                                                                                                                                                line-height: 24px;
-                                                                                                                                                                            }
-                                                                                                                                                                        }
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.section-page {
+    padding: 200px 0;
+}
+
+.title {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 40px 0 0;
+}
+
+span.streak {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.6px;
+    color: #00B2A0;
+}
+
+/* .title span::after {
+    content: "";
+    background-image: url(../images/streak.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 48px;
+    height: 85px;
+    top: 15px;
+    right: 0;
+} */
+
+.header {
+    background-image: url(../images/header/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+img.logo-img {
+    display: block;
+    height: 65px;
+}
+
+.menu {
+    width: 100%;
+    margin-right: 70px;
+}
+
+.menu__btn {
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list-item+.menu__list-item {
+    margin-left: 45px;
+}
+
+.menu__list-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__list-link:hover {
+    border-bottom: 1px solid #00B2A0;
+}
+
+.header__content-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 135px);
+}
+
+.header__title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 235px;
+    letter-spacing: 0.6px;
+    color: #0D302C;
+    margin-top: auto;
+}
+
+.header__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.6px;
+    color: #000000;
+    margin-bottom: auto;
+}
+
+.header__icon {
+    margin-bottom: 93px;
+}
+
+.about__title {
+    padding-bottom: 95px;
+}
+
+.about__text-inner {
+    column-count: 2;
+}
+
+.about__text-inner p {
+    padding-bottom: 30px;
+    min-height: 120px;
+    max-width: 480px;
+}
+
+.school {
+    background-color: #F8F8F8;
+    padding: 200px 0;
+}
+
+.school__title {
+    padding-bottom: 100px;
+}
+
+.school__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school__item {
+    max-width: 350px;
+    margin-bottom: 100px;
+}
+
+.school__item-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    position: relative;
+    max-width: 220px;
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.school__item-title--liv {
+    padding-bottom: 19px;
+    padding-left: 65px;
+}
+
+.school__item-title::before {
+    content: "";
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.school__item-title--liv::before {
+    background-image: url(../images/school/living-icon.svg);
+    width: 55px;
+    height: 50px;
+}
+
+.school__item-title--fly::before {
+    background-image: url(../images/school/flight-icon.svg);
+}
+
+.school__item-title--training::before {
+    background-image: url(../images/school/training-icon.svg);
+}
+
+.school__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school__info-item {
+    margin-bottom: 10px;
+    width: 346px;
+    position: relative;
+}
+
+.school__info-item img {
+    display: inline-block;
+    object-fit: cover;
+}
+
+.school__info-item span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    padding-left: 3px;
+}
+
+.best {
+    background-image: url(../images/best/best-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top right;
+}
+
+.best__title {
+    text-align: left;
+    padding: 200px 0 100px;
+}
+
+.best__inner {
+    display: flex;
+}
+
+.best__item-1 {
+    flex: 0 0 50%;
+}
+
+.best__text {
+    max-width: 509px;
+    padding-bottom: 140px;
+}
+
+.best__text p {
+    padding-bottom: 30px;
+}
+
+.school__text {
+    max-width: 600px;
+}
+
+.school__text p {
+    padding-bottom: 30px;
+}
+
+.gallery__title {
+    margin-bottom: 210px;
+}
+
+.gallery__filter-btn {
+    margin-bottom: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    color: #242121;
+}
+
+.gallery__btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.mixitup-control-active {
+    color: #00B2A0;
+}
+
+.gallery__content {
+    columns: 2;
+    column-gap: 38px;
+    margin: 0 -40px 0 -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+div.gallery__content .gallery__item {
+    display: inline-block;
+    margin: 0 0 32px 0;
+    position: relative;
+}
+
+.gallery__content .gallery__item img {
+    width: 100%;
+}
+
+.gallery__more {
+    display: block;
+    text-align: center;
+    margin: 50px 0 200px;
+}
+
+.gallery__more-link {
+    width: 350px;
+    height: 70px;
+    padding: 20px 90px;
+    border: #C4C4C4 solid 1px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    color: #242121;
+}
+
+.gallery__more-link:hover {
+    border: #999999 solid 2px;
+}
+
+.gallery__more-link:active {
+    font-size: 22px;
+    padding: 18px 88px;
+}
+
+.blockquote {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    display: block;
+    padding: 80px 10px;
+    background-color: #F8F8F8;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.blockquote__autor {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+    display: block;
+    max-width: 850px;
+    text-align: end;
+    margin: 0 auto;
+}
+
+.gallery__video-container {
+    background-image: url(../images/gallery/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__video-img {
+    display: block;
+}
+
+.gallery__numbers {
+    padding: 200px 10px 0;
+}
+
+.gallery__numbers-container {
+    max-width: 700px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gallery__numbers-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.6px;
+    color: #01353E;
+}
+
+.gallery__numbers-item span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+    display: block;
+}
+
+.slider-blog {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.slider-blog__title {
+    margin-bottom: 230px;
+}
+
+.slider-blog__inner {
+    display: block;
+}
+
+.slick-prev,
+.slick-next {
+    border: none;
+    background-color: red;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    z-index: 10;
+    width: 100px;
+    height: 100%;
+}
+
+.slick-prev {
+    left: 2%;
+}
+
+.slick-next {
+    right: 2%;
+}
+
+.slider-blog__items {
+    position: relative;
+}
+
+.slider-blog__items::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(36, 33, 33, 0.5);
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+img.slider-blog__item-bg {
+    display: block;
+    margin: 0 auto;
+}
+
+.slider-blog__text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    max-width: 600px;
+    transform: translate(100%, -60%);
+    z-index: 10;
+}
+
+.slider-blog__text-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.slider-blog__text-descr {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 77px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.slick-dots button {
+    text-decoration: none;
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+}
+
+.slick-dots li+li {
+    margin-left: 15px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #00B2A0;
+}
+
+.team__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team__title {
+    margin-bottom: 210px;
+}
+
+.team__item-img {
+    margin-bottom: 25px;
+}
+
+.team__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team__position {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.pricing {
+    background-color: #F8F8F8;
+}
+
+.pricing__title {
+    margin-bottom: 180px;
+}
+
+.pricing__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__item {
+    padding: 45px 43px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__item-name {
+    text-align: center;
+    margin-bottom: 58px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #01353E;
+}
+
+.pricing__item-list {
+    flex: 1 1 auto;
+}
+
+.pricing__item-list li+li {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.pricing__item-price {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #01353E;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    padding-right: 14px;
+    align-self: center;
+}
+
+.pricing__item-price span {
+    font-size: 18px;
+    line-height: 22px;
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+}
+
+.map {
+    margin: 200px 0;
+}
+
+#imgMap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.connection__title {
+    margin-bottom: 240px;
+}
+
+.connection__inner {
+    display: flex;
+}
+
+.connection__form {
+    align-self: start;
+    display: block;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.connection__form input::placeholder,
+.connection__form textarea::placeholder {
+    max-width: 260px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #00B2A0;
+}
+
+.connection__form input,
+.connection__form textarea {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #DADADA;
+}
+
+.connection__form input {
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+}
+
+.connection__form textarea {
+    padding-bottom: 95px;
+    margin: 50px 0 70px;
+    min-height: 155px;
+    resize: none;
+}
+
+.connection__form button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+    background-color: #fff;
+    border: #C4C4C4 solid 1px;
+    padding: 22px 110px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 350px;
+    height: 70px;
+}
+
+.connection__form button:hover {
+    border: #999999 solid 2px;
+}
+
+.connection__form button:active {
+    font-size: 22px;
+    padding: 20px 107px;
+}
+
+.connection__contacts {
+    display: block;
+    width: 50%;
+    padding: 50px;
+    background-color: #F8F8F8;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.connection__contacts p {
+    max-width: 330px;
+    margin-bottom: 65px;
+}
+
+.connection__contacts p:last-child {
+    margin: 0;
+}
+
+.connection__contacts span {
+    display: block;
+}
+
+.footer .footer__social {
+    display: block;
+    padding: 200px 10px;
+    text-align: center;
+}
+
+.footer__social-list {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer__social-list a {
+    color: #242121;
+    transition: all 0.3s;
+}
+
+.footer__social-list a:hover {
+    color: #00B2A0;
+}
+
+.footer__social-list li:last-child {
+    margin: 0;
+}
+
+.footer__logo {
+    display: block;
+    background-color: #00B2A0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer__logo a img {
+    margin: 0 auto;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1620px) {
+    .best__title {
+        padding: 100px 0 100px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .best__title {
+        padding: 100px 0 50px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .best__title {
+        padding: 70px 0 40px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .section-page {
+        padding: 100px 0;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    span.streak {
+        font-size: 51px;
+        line-height: 80px;
+    }
+
+
+    /* .title span {
+        padding: 0 40px 0 0;
+    } */
+
+
+
+    /* .title span::after {
+        background-image: url(../images/streak_1160px.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 40px;
+        height: 70px;
+        top: 15px;
+        right: 0;
+    } */
+
+    .about__text-inner {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header__top-inner {
+        padding-top: 25px;
+    }
+
+    .header__content-inner {
+        min-height: calc(100vh - 110px);
+    }
+
+    .logo {
+        position: relative;
+        z-index: 3;
+    }
+
+    nav.menu {
+        width: 85px;
+        height: 24px;
+        margin-right: 0;
+    }
+
+    .menu__list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: block;
+        text-align: center;
+        background: rgb(29, 42, 52);
+        transform: translateY(-200%);
+        transition: all 0.5s;
+    }
+
+    .header__top-inner--active .menu__list {
+        transform: translateY(0%);
+    }
+
+    button.menu__btn {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 0.6px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        display: block;
+        position: relative;
+        z-index: 3;
+
+    }
+
+    ul.menu__list {
+        padding: 90px 0 30px;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+        margin-top: 45px;
+    }
+
+    .menu__list-link {
+        font-size: 28px;
+    }
+
+    .header__title {
+        font-size: 150px;
+        line-height: 150px;
+    }
+
+    .header__subtitle {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    a.header__icon {
+        margin-bottom: 10px;
+    }
+
+    .about__text-inner p {
+        padding-bottom: 10px;
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 735px) {
+    .title {
+        font-size: 35px;
+        line-height: 42px;
+         
+    }
+
+    span.streak {
+        font-size: 38px;
+        line-height: 70px;
+    }
+
+    .about__title {
+        padding-bottom: 75px;
+    }
+
+    .about__text-inner {
+        column-count: 1;
+    }
+
+    .about__text-inner p {
+        max-width: 100%;
+        padding-bottom: 20px;
+        min-height: 50px;
+    }
+}
+
+
+@media (max-width: 685px) {
+    .section-page {
+        padding: 75px 0;
+    }
+
+    .title {
+        font-size: 33px;
+        line-height: 40px;
+        padding-right: 25px;
+    }
+
+    .about__title {
+        padding-bottom: 50px;
+    }
+
+@media (max-width: 565px) {
+    .header__title {
+        font-size: 130px;
+        line-height: 150px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    button.menu__btn {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    nav.menu {
+        width: 62px;
+    }
+}
+
+@media (max-width: 470px) {
+    .title {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    span.streak {
+        font-size: 28px;
+        line-height: 57px;
+    }
+
+    .header__title {
+        font-size: 96px;
+        line-height: 114px;
+    }
+
+    .header__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .menu__list-link {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .about__text-inner p:last-child{
+        padding-bottom: 0;
+    }
+
+   }
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    span.streak {
+        font-size: 27px;
+        line-height: 51px;
+    }
+
+  
+    .header__title {
+        font-size: 86px;
+        line-height: 108px;
+    }
+
+    .header__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
