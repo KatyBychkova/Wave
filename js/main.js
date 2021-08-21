@@ -6,9 +6,11 @@ $(function() {
 
     var mixer = mixitup('.gallery__content', {
         animation: {
-            duration: 300
-
-        }
+            duration: 700,
+               "nudge": false,
+            "reverseOut": false,
+            "effects": "fade translateX(-1%) rotateY(-2deg)"
+             }
     });
 
     $('[data-fancybox]').fancybox({

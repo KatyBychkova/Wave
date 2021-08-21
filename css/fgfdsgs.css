@@ -1,0 +1,31 @@
+.gallery__content {
+    display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;}
+
+ .gallery__filter-btn, .gallery__content {
+     text-align: left;
+ }
+
+
+ @media (max-width: 835px)
+div.gallery__item {
+ /* margin-right: 20px; */
+}
+@media (max-width: 1270px)
+div.gallery__item {
+ /* margin-right: 32px; */
+}
+
+
+@media (max-width: 835px)
+div.gallery__content .gallery__item {
+ /* margin-bottom: 20px; */
+}
+
+
+div.gallery__content .gallery__item {
+ display: inline-block;
+ margin-bottom: 32px;
+ position: relative;
+}
