@@ -865,7 +865,6 @@ img.slider-blog__item-bg {
         background-position: top right;
     }
 
-
     .gallery__title,
     .gallery__more,
     .blockquote {
@@ -873,7 +872,8 @@ img.slider-blog__item-bg {
     }
 
     .gallery__numbers {
-        padding-top: 100px;
+       padding: 100px 10px 0;
+
     }
 
     .gallery__video-container {
@@ -897,6 +897,10 @@ img.slider-blog__item-bg {
 
     .best__text {
         max-width: 100%;
+    }
+
+    .best__title {
+        padding: 95px 0 95px;
     }
 }
 
@@ -1020,6 +1024,7 @@ img.slider-blog__item-bg {
 
     .gallery__video-img {
         max-width: 80%;
+        margin: 0 auto;
     }
 
     .gallery__numbers-item {
@@ -1099,7 +1104,9 @@ img.slider-blog__item-bg {
         line-height: 70px;
     }
 
-    .about__title {
+    .about__title,
+    .school__title,
+    .best__title {
         padding-bottom: 75px;
     }
 
@@ -1113,10 +1120,7 @@ img.slider-blog__item-bg {
         min-height: 50px;
     }
 
-    .school__title {
-        padding-bottom: 70px;
-    }
-
+    
     .school__items {
         display: block;
     }
@@ -1129,6 +1133,11 @@ img.slider-blog__item-bg {
     .school__item-title {
         margin: 0;
         padding-left: 50px;
+    }
+
+
+    .gallery__title, .gallery__more, .blockquote {
+        margin-bottom: 75px;
     }
 
     .school__item-title::before {
@@ -1146,9 +1155,6 @@ img.slider-blog__item-bg {
         padding: 16px 46px;
         font-size: 18px;
     }
-
-
-
 
     .blockquote {
         font-size: 30px;
@@ -1171,10 +1177,6 @@ img.slider-blog__item-bg {
         font-size: 33px;
         line-height: 40px;
         padding-right: 25px;
-    }
-
-    .about__title {
-        padding-bottom: 50px;
     }
 
     .school__item {
@@ -1207,8 +1209,9 @@ img.slider-blog__item-bg {
     }
 }
 
-@media (max-width: 565px) {
-    .header__title {
+@media (max-width: 580px) {
+
+       .header__title {
         font-size: 130px;
         line-height: 150px;
     }
@@ -1217,6 +1220,12 @@ img.slider-blog__item-bg {
         font-size: 20px;
         line-height: 24px;
     }
+
+    .section-page {
+        padding: 70px 0;
+    }
+    
+    
 
     button.menu__btn {
         font-weight: 400;
@@ -1227,9 +1236,35 @@ img.slider-blog__item-bg {
         width: 62px;
     }
 
-    .school__title {
-        padding-bottom: 60px;
+    .about__title, 
+    .school__title, 
+    .best__title {
+        padding-bottom: 70px;
     }
+
+    .best__title {
+        padding: 70px 0;
+    }
+
+    .gallery__video-container {
+        height: 280px;
+    }
+    .blockquote {
+        font-size: 26px;}
+
+    .gallery__video-img {
+        max-width: 50%;
+    }
+
+    .gallery__numbers-item {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .gallery__numbers {
+        padding: 65px 10px 0;
+ 
+     }
 }
 
 @media (max-width: 470px) {
@@ -1266,6 +1301,37 @@ img.slider-blog__item-bg {
     .about__text-inner p:last-child {
         padding-bottom: 0;
     }
+
+    .gallery__video-container {
+        height: 250px;
+    }
+
+    .gallery__more-link {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .blockquote {
+        font-size: 24px;
+        padding: 38px 10px;
+    }
+    
+    
+}
+
+@media (max-width: 430px) {
+    .gallery__video-container {
+        height: 222px;
+    }
+
+    .gallery__numbers-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery__numbers-item {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -1299,5 +1365,42 @@ img.slider-blog__item-bg {
 
     .best__title {
         padding-top: 50px;
+    }
+    .blockquote {
+        font-size: 20px;
+        line-height: 30px;
+       
+    }
+.gallery__filter-btn .gallery__btn {
+    display: block;
+}
+
+.gallery__btn{
+    margin-bottom: 20px;
+}
+
+.gallery__btn:last-child{
+    margin-bottom: 35px;
+}
+
+
+    .gallery__title, .gallery__more, .blockquote {
+        margin-bottom: 55px;
+    }
+
+    .gallery__video-img {
+        max-width: 35%;
+    }
+    .gallery__video-container {
+        height: 180px;
+    }
+
+    .gallery__numbers {
+        padding: 48px 10px 0;
+    }
+
+    .gallery__numbers-item {
+        font-size: 26px;
+        line-height: 44px;
     }
 }
