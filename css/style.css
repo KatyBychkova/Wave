@@ -634,11 +634,7 @@ img.slider-blog__item-bg {
     right: 0;
 }
 
-.map {
-    margin: 200px 0;
-}
-
-#imgMap {
+img.map__img{
     max-width: 100%;
     margin: 0 auto;
 }
@@ -784,6 +780,10 @@ img.slider-blog__item-bg {
 }
 
 @media (max-width: 1420px) {
+    .section-page {
+        padding: 150px 0;
+    }
+
     .best__title {
         padding: 100px 0 50px;
     }
@@ -796,10 +796,7 @@ img.slider-blog__item-bg {
 }
 
 @media (max-width: 1270px) {
-    .section-page {
-        padding: 150px 0;
-    }
-
+    
     .best__title {
         padding: 70px 0 40px;
     }
@@ -1744,6 +1741,3 @@ img.slider-blog__item-bg {
             margin-left: 8px;
         }
     }
-
-
-    
