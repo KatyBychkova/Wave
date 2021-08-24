@@ -586,6 +586,7 @@ img.slider-blog__item-bg {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+
 }
 
 .pricing__item-name {
@@ -601,11 +602,16 @@ img.slider-blog__item-bg {
 
 .pricing__item-list {
     flex: 1 1 auto;
+
+}
+
+.pricing__item-list li {
+    font-weight: 400;
 }
 
 .pricing__item-list li+li {
     margin-top: 20px;
-    font-weight: 400;
+
 }
 
 .pricing__item-price {
@@ -835,7 +841,8 @@ img.slider-blog__item-bg {
     }
 
     .pricing__item {
-        padding: 35px 30px;}
+        padding: 35px 30px;
+    }
 
 
 }
@@ -930,13 +937,34 @@ img.slider-blog__item-bg {
 
         bottom: 37px;
     }
+
     .pricing__item {
         max-width: 325px;
     }
 }
 
 @media (max-width: 1060px) {
+    .team__item+.team__item {
+        margin-left: 15px;
+    }
 
+    .pricing__item+.pricing__item {
+        margin-left: 15px;
+    }
+
+    .pricing__item-list li+li {
+        margin-top: 16px;
+    }
+
+    .pricing__item-name,
+    .pricing__item-price {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .pricing__item-price span {
+        bottom: 6px;
+    }
 }
 
 @media (max-width: 1005px) {
@@ -1084,7 +1112,6 @@ img.slider-blog__item-bg {
 
     }
 
-
     .gallery__more-link {
         padding: 16px 60px;
         font-size: 20px;
@@ -1117,6 +1144,28 @@ img.slider-blog__item-bg {
     .team__title,
     .pricing__title {
         margin-bottom: 110px;
+    }
+
+
+    .pricing__inner {
+        display: block;
+        padding: 0 35px;
+
+    }
+
+    .pricing__item {
+        max-width: 100%;
+
+    }
+
+    .pricing__item+.pricing__item {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .pricing__item-list {
+        font-size: 18px;
+        line-height: 24px;
     }
 
 
@@ -1200,6 +1249,40 @@ img.slider-blog__item-bg {
     .slider-blog__text-descr {
         display: none;
     }
+
+    .team__inner,
+    .pricing__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__inner {
+        display: flex;
+
+    }
+
+    .pricing__item {
+        max-width: 400px;
+        padding: 45px 43px;
+        display: flex;
+
+    }
+
+
+
+
+
+    .team__item+.team__item {
+        margin-top: 35px;
+        margin-left: 0;
+    }
+
+    .team__item-img {
+        margin-bottom: 12px;
+        max-height: 350px;
+    }
+
+
 }
 
 @media (max-width: 735px) {
@@ -1294,6 +1377,8 @@ img.slider-blog__item-bg {
     }
 
 
+
+
 }
 
 @media (max-width: 685px) {
@@ -1344,262 +1429,321 @@ img.slider-blog__item-bg {
     .slick-dots {
         bottom: 14px;
     }
-}
 
-@media (max-width: 580px) {
-
-    .header__title {
-        font-size: 130px;
-        line-height: 150px;
+    .team__item-img {
+        max-height: 300px;
     }
 
-    .header__subtitle {
-        font-size: 20px;
-        line-height: 24px;
+    .pricing__item {
+        max-width: 350px;
+        padding: 20px 38px;
     }
 
-    .section-page {
-        padding: 70px 0;
+    .pricing__item-name,
+    .pricing__item-price {
+        font-size: 26px;
+        line-height: 32px;
     }
 
-    button.menu__btn {
+    .pricing__item-name {
+        margin-bottom: 30px;
+    }
+
+    .pricing__item-list {
+
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .pricing__item-list li+li {
+        margin-top: 11px;
+    }
+
+    .pricing__item-price {
         font-weight: 400;
-        font-size: 22px;
-    }
+        font-size: 32px;
+        line-height: 36px;
+        color: #01353E;
+        margin-top: 45px;
 
-    nav.menu {
-        width: 62px;
-    }
 
-    .about__title,
-    .school__title,
-    .best__title {
-        padding-bottom: 70px;
-    }
-
-    .best__title {
-        padding: 70px 0;
-    }
-
-    .gallery__video-container {
-        height: 280px;
-    }
-
-    .blockquote {
-        font-size: 26px;
-    }
-
-    .gallery__video-img {
-        max-width: 50%;
-    }
-
-    .gallery__numbers-item {
-        font-size: 30px;
-        line-height: 48px;
-    }
-
-    .gallery__numbers {
-        padding: 65px 10px 0;
 
     }
 
-    .slider-blog__title ,
-    .team__title,
-    .pricing__title {
-        margin-bottom: 70px;
-    }
+    @media (max-width: 580px) {
 
-    .slider-blog__text-title {
-        font-size: 18px;
-        line-height: 23px;
-    }
-
-
-}
-
-@media (max-width: 470px) {
-    .title {
-        font-size: 27px;
-        line-height: 33px;
-    }
-
-    span.streak {
-        font-size: 28px;
-        line-height: 57px;
-    }
-
-    .header__title {
-        font-size: 96px;
-        line-height: 114px;
-    }
-
-    .header__subtitle {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .menu__list-link {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .menu__list-item+.menu__list-item {
-        margin-left: 0;
-        margin-top: 25px;
-    }
-
-    .about__text-inner p:last-child {
-        padding-bottom: 0;
-    }
-
-    .gallery__video-container {
-        height: 250px;
-    }
-
-    .gallery__more-link {
-        padding: 10px 30px;
-        font-size: 16px;
-    }
-
-    .gallery__more-link:active {
-        padding: 6px 26px;
-        font-size: 14px;
-    }
-
-    .blockquote {
-        font-size: 24px;
-        padding: 38px 10px;
-    }
-}
-
-@media (max-width: 430px) {
-    .gallery__video-container {
-        height: 222px;
-    }
-
-    .gallery__numbers-container {
-        flex-wrap: wrap;
-    }
-
-    .gallery__numbers-item {
-        flex: 0 0 50%;
-        margin-bottom: 20px;
-    }
-
-    .slider-blog__text {
-        max-width: 190px;
-    }
-
-    .slider-blog__text-title {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .slider-blog__text-title {
-        font-size: 14px;
-        line-height: 18px;
-    }
-
-    .slider-blog__text {
-        top: 40%;
-    }
-
-    .slick-dots {
-        bottom: 7px;
-    }
-}
-
-@media (max-width: 360px) {
-    .section-page {
-        padding: 50px 0;
-    }
-
-    .title {
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-    span.streak {
-        font-size: 27px;
-        line-height: 51px;
-    }
-
-    .header__title {
-        font-size: 86px;
-        line-height: 108px;
-    }
-
-    .header__subtitle {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .school__title {
-        padding-bottom: 50px;
-    }
-
-    .best__title {
-        padding-top: 50px;
-    }
-
-    .blockquote {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .gallery__filter-btn .gallery__btn {
-        display: block;
-    }
-
-    .gallery__btn {
-        margin-bottom: 20px;
-    }
-
-    .gallery__btn:last-child {
-        margin-bottom: 35px;
-    }
-
-    .gallery__title,
-    .gallery__more,
-    .blockquote {
-        margin-bottom: 55px;
-    }
-
-    .gallery__video-img {
-        max-width: 35%;
-    }
-
-    .gallery__video-container {
-        height: 180px;
-    }
-
-    .gallery__numbers {
-        padding: 48px 10px 0;
-    }
-
-    .gallery__numbers-item {
-        font-size: 26px;
-        line-height: 44px;
-    }
-
-    .slider-blog__text {
-        max-width: 174px;
-    }
-
-    .slider-blog__title,
-    .team__title,
-    .pricing__title {
-        margin-bottom: 50px;
-    }
-
-    .slick-dots button {
-        width: 6px;
-        height: 6px;
+        .header__title {
+            font-size: 130px;
+            line-height: 150px;
         }
 
-    .slick-dots li+li {
-        margin-left: 8px;
+        .header__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .section-page {
+            padding: 70px 0;
+        }
+
+        button.menu__btn {
+            font-weight: 400;
+            font-size: 22px;
+        }
+
+        nav.menu {
+            width: 62px;
+        }
+
+        .about__title,
+        .school__title,
+        .best__title {
+            padding-bottom: 70px;
+        }
+
+        .best__title {
+            padding: 70px 0;
+        }
+
+        .gallery__video-container {
+            height: 280px;
+        }
+
+        .blockquote {
+            font-size: 26px;
+        }
+
+        .gallery__video-img {
+            max-width: 50%;
+        }
+
+        .gallery__numbers-item {
+            font-size: 30px;
+            line-height: 48px;
+        }
+
+        .gallery__numbers {
+            padding: 65px 10px 0;
+
+        }
+
+        .slider-blog__title,
+        .team__title,
+        .pricing__title {
+            margin-bottom: 70px;
+        }
+
+        .slider-blog__text-title {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+
+
+
+    }
+
+    @media (max-width: 470px) {
+        .title {
+            font-size: 27px;
+            line-height: 33px;
+        }
+
+        span.streak {
+            font-size: 28px;
+            line-height: 57px;
+        }
+
+        .header__title {
+            font-size: 96px;
+            line-height: 114px;
+        }
+
+        .header__subtitle {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .menu__list-link {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .menu__list-item+.menu__list-item {
+            margin-left: 0;
+            margin-top: 25px;
+        }
+
+        .about__text-inner p:last-child {
+            padding-bottom: 0;
+        }
+
+        .gallery__video-container {
+            height: 250px;
+        }
+
+        .gallery__more-link {
+            padding: 10px 30px;
+            font-size: 16px;
+        }
+
+        .gallery__more-link:active {
+            padding: 6px 26px;
+            font-size: 14px;
+        }
+
+        .blockquote {
+            font-size: 24px;
+            padding: 38px 10px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .gallery__video-container {
+            height: 222px;
+        }
+
+        .gallery__numbers-container {
+            flex-wrap: wrap;
+        }
+
+        .gallery__numbers-item {
+            flex: 0 0 50%;
+            margin-bottom: 20px;
+        }
+
+        .slider-blog__text {
+            max-width: 190px;
+        }
+
+        .slider-blog__text-title {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .slider-blog__text-title {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .slider-blog__text {
+            top: 40%;
+        }
+
+        .slick-dots {
+            bottom: 7px;
+        }
+
+        .team__item-img {
+            max-height: 280px;
+        }
+
+        .pricing__item {
+            padding: 20px 28px;
+        }
+
+        .pricing__inner {
+            padding: 0px 14px;
+        }
+
+        .pricing__item-price {
+            font-size: 29px;
+            line-height: 33px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .section-page {
+            padding: 50px 0;
+        }
+
+        .title {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        span.streak {
+            font-size: 27px;
+            line-height: 51px;
+        }
+
+        .header__title {
+            font-size: 86px;
+            line-height: 108px;
+        }
+
+        .header__subtitle {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .school__title {
+            padding-bottom: 50px;
+        }
+
+        .best__title {
+            padding-top: 50px;
+        }
+
+        .blockquote {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .gallery__filter-btn .gallery__btn {
+            display: block;
+        }
+
+        .gallery__btn {
+            margin-bottom: 20px;
+        }
+
+        .gallery__btn:last-child {
+            margin-bottom: 35px;
+        }
+
+        .gallery__title,
+        .gallery__more,
+        .blockquote {
+            margin-bottom: 55px;
+        }
+
+        .gallery__video-img {
+            max-width: 35%;
+        }
+
+        .gallery__video-container {
+            height: 180px;
+        }
+
+        .gallery__numbers {
+            padding: 48px 10px 0;
+        }
+
+        .gallery__numbers-item {
+            font-size: 26px;
+            line-height: 44px;
+        }
+
+        .slider-blog__text {
+            max-width: 174px;
+        }
+
+        .slider-blog__title,
+        .team__title,
+        .pricing__title {
+            margin-bottom: 50px;
+        }
+
+        .slick-dots button {
+            width: 6px;
+            height: 6px;
+        }
+
+        .slick-dots li+li {
+            margin-left: 8px;
+        }
     }
 
 
-}
+    
