@@ -333,11 +333,11 @@ div.gallery__item:nth-child(5) {
     width: 350px;
     height: 70px;
     padding: 20px 90px;
-    border: #C4C4C4 solid 1px;
-    font-weight: 400;
     font-size: 24px;
+    font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+    border: #C4C4C4 solid 1px;
     background-color: transparent;
     cursor: pointer;
     color: #242121;
@@ -349,8 +349,9 @@ div.gallery__item:nth-child(5) {
 }
 
 .gallery__more-link:active {
+    padding: 16px 86px;
+    margin: 4px 4px;
     font-size: 22px;
-    padding: 18px 88px;
 }
 
 .blockquote {
@@ -634,7 +635,7 @@ img.slider-blog__item-bg {
     right: 0;
 }
 
-img.map__img{
+img.map__img {
     max-width: 100%;
     margin: 0 auto;
 }
@@ -688,20 +689,16 @@ img.map__img{
 }
 
 .connection__form button {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+    padding: 24px 110px;
     font-size: 24px;
+    font-weight: 400;
     line-height: 18px;
-    letter-spacing: 0.6px;
-    color: #242121;
-    background-color: #fff;
+    text-transform: uppercase;
     border: #C4C4C4 solid 1px;
-    padding: 22px 110px;
+    background-color: #fff;
     cursor: pointer;
-    transition: all 0.3s;
-    width: 350px;
-    height: 70px;
+    color: #242121;
+    transition: all 0.2s;
 }
 
 .connection__form button:hover {
@@ -709,8 +706,9 @@ img.map__img{
 }
 
 .connection__form button:active {
+    padding: 18px 104px;
+    margin: 6px 6px;
     font-size: 22px;
-    padding: 20px 107px;
 }
 
 .connection__contacts {
@@ -751,6 +749,7 @@ img.map__img{
 
 .footer__social-list a {
     color: #242121;
+    cursor: pointer;
     transition: all 0.3s;
 }
 
@@ -773,6 +772,14 @@ img.map__img{
     margin: 0 auto;
 }
 
+
+
+
+
+ /* ADAPTIVE */
+
+
+ 
 @media (max-width: 1620px) {
     .best__title {
         padding: 100px 0 100px;
@@ -781,22 +788,38 @@ img.map__img{
 
 @media (max-width: 1420px) {
     .section-page {
-        padding: 150px 0;
+        padding: 175px 0;
     }
+
+    .footer .footer__social {
+        padding: 175px 10px;
+     }
 
     .best__title {
         padding: 100px 0 50px;
+    }
+
+    .slider-blog__title,
+    .team__title,
+    .pricing__title,
+    .connection__title {
+        margin-bottom: 150px;
+    }
+
+    .gallery__title,
+    .gallery__more,
+    .blockquote {
+        margin-bottom: 175px;
     }
 
     .slider-blog__text {
         max-width: 535px;
     }
 
-
 }
 
 @media (max-width: 1270px) {
-    
+
     .best__title {
         padding: 70px 0 40px;
     }
@@ -824,7 +847,9 @@ img.map__img{
     }
 
     .slider-blog__title,
-    .team__title {
+    .team__title,
+    .pricing__title,
+    .connection__title {
         margin-bottom: 150px;
     }
 
@@ -841,13 +866,21 @@ img.map__img{
         padding: 35px 30px;
     }
 
+    .footer__logo{
+        padding: 50px 0;
+    }
+
 
 }
 
 @media (max-width: 1160px) {
     .section-page {
-        padding: 100px 0;
+        padding: 145px 0;
     }
+
+    .footer .footer__social {
+        padding: 145px 10px;
+     }
 
     .title {
         font-size: 40px;
@@ -962,12 +995,16 @@ img.map__img{
     .pricing__item-price span {
         bottom: 6px;
     }
+
+    .footer__logo {
+        padding: 40px 0;
+    }
 }
 
 @media (max-width: 1005px) {
     .best__inner {
         display: block;
-        padding-bottom: 85px;
+        padding-bottom: 0;
     }
 
     .best__title {
@@ -1002,6 +1039,53 @@ img.map__img{
         color: transparent;
         width: 12px;
         height: 12px;
+    }
+
+
+    .connection__inner {
+        display: block;
+    }
+
+
+    .connection__form {
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 56px;
+    }
+
+    .connection__form textarea {
+        padding-bottom: 53px;
+        margin: 44px 0 44px;
+    }
+
+    
+
+    .connection__contacts {
+        width: 100%;
+        padding: 40px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .connection__contacts p {
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .connection__form button {
+        padding: 18px 84px;
+        font-size: 20px;
+    }
+
+    .connection__form button:active {
+        padding: 16px 76px;
+        margin: 6px 0 0px 6px;
+        font-size: 18px;
+    }
+
+    .connection__form input::placeholder,
+    .connection__form textarea::placeholder {
+        max-width: 400px;
     }
 
 }
@@ -1139,7 +1223,8 @@ img.map__img{
 
     .slider-blog__title,
     .team__title,
-    .pricing__title {
+    .pricing__title,
+    .connection__title {
         margin-bottom: 110px;
     }
 
@@ -1164,7 +1249,6 @@ img.map__img{
         font-size: 18px;
         line-height: 24px;
     }
-
 
 }
 
@@ -1220,7 +1304,8 @@ img.map__img{
 
     .slider-blog__title,
     .team__title,
-    .pricing__title {
+    .pricing__title,
+    .connection__title {
         margin-bottom: 80px;
     }
 
@@ -1265,10 +1350,6 @@ img.map__img{
 
     }
 
-
-
-
-
     .team__item+.team__item {
         margin-top: 35px;
         margin-left: 0;
@@ -1279,12 +1360,37 @@ img.map__img{
         max-height: 350px;
     }
 
+    .connection__form textarea {
+        padding-bottom: 70px;
+        margin: 40px 0 58px;
+        min-height: 142px;
+
+    }
+
+    .connection__form button:active {
+        margin: 0 0 6px 0px;
+
+    }
+
+    .connection__contacts p {
+        margin-bottom: 58px;
+    }
+
+    .connection__contacts {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
 
 }
 
 @media (max-width: 735px) {
     .section-page {
-        padding: 75px 0;
+        padding: 100px 0;
+    }
+
+    .footer .footer__social {
+       padding: 100px 10px;
     }
 
     .title {
@@ -1313,7 +1419,6 @@ img.map__img{
         min-height: 50px;
     }
 
-
     .school__items {
         display: block;
     }
@@ -1328,13 +1433,13 @@ img.map__img{
         padding-left: 50px;
     }
 
-
     .gallery__title,
     .gallery__more,
     .blockquote,
     .slider-blog__title,
     .team__title,
-    .pricing__title {
+    .pricing__title,
+    .connection__title {
         margin-bottom: 75px;
     }
 
@@ -1373,8 +1478,25 @@ img.map__img{
         line-height: 60px;
     }
 
+    .connection__form button {
+        padding: 18px 66px;
+        font-size: 20px;
+    }
+
+    .connection__form button:active {
+        padding: 16px 56px;
+        margin: 3px 0 3px 0;
+        font-size: 18px;
+    }
 
 
+    .footer__social-list {
+        font-size: 20px;
+    }
+
+    .footer__logo {
+        padding: 30px 0;
+    }
 
 }
 
@@ -1463,281 +1585,356 @@ img.map__img{
         color: #01353E;
         margin-top: 45px;
 
+    }
+}
 
+@media (max-width: 580px) {
+
+    .header__title {
+        font-size: 130px;
+        line-height: 150px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .section-page {
+        padding: 85px 0;
+    }
+
+    .footer .footer__social {
+        padding: 85px 10px;
+     }
+
+    button.menu__btn {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    nav.menu {
+        width: 62px;
+    }
+
+    .about__title,
+    .school__title,
+    .best__title {
+        padding-bottom: 70px;
+    }
+
+    .best__title {
+        padding: 70px 0;
+    }
+
+    .gallery__video-container {
+        height: 280px;
+    }
+
+    .blockquote {
+        font-size: 26px;
+    }
+
+    .gallery__video-img {
+        max-width: 50%;
+    }
+
+    .gallery__numbers-item {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .gallery__numbers {
+        padding: 65px 10px 0;
 
     }
 
-    @media (max-width: 580px) {
-
-        .header__title {
-            font-size: 130px;
-            line-height: 150px;
-        }
-
-        .header__subtitle {
-            font-size: 20px;
-            line-height: 24px;
-        }
-
-        .section-page {
-            padding: 70px 0;
-        }
-
-        button.menu__btn {
-            font-weight: 400;
-            font-size: 22px;
-        }
-
-        nav.menu {
-            width: 62px;
-        }
-
-        .about__title,
-        .school__title,
-        .best__title {
-            padding-bottom: 70px;
-        }
-
-        .best__title {
-            padding: 70px 0;
-        }
-
-        .gallery__video-container {
-            height: 280px;
-        }
-
-        .blockquote {
-            font-size: 26px;
-        }
-
-        .gallery__video-img {
-            max-width: 50%;
-        }
-
-        .gallery__numbers-item {
-            font-size: 30px;
-            line-height: 48px;
-        }
-
-        .gallery__numbers {
-            padding: 65px 10px 0;
-
-        }
-
-        .slider-blog__title,
-        .team__title,
-        .pricing__title {
-            margin-bottom: 70px;
-        }
-
-        .slider-blog__text-title {
-            font-size: 18px;
-            line-height: 23px;
-        }
-
-
-
-
+    .slider-blog__title,
+    .team__title,
+    .pricing__title,
+    .connection__title {
+        margin-bottom: 70px;
     }
 
-    @media (max-width: 470px) {
-        .title {
-            font-size: 27px;
-            line-height: 33px;
-        }
-
-        span.streak {
-            font-size: 28px;
-            line-height: 57px;
-        }
-
-        .header__title {
-            font-size: 96px;
-            line-height: 114px;
-        }
-
-        .header__subtitle {
-            font-size: 14px;
-            line-height: 24px;
-        }
-
-        .menu__list-link {
-            font-size: 24px;
-            line-height: 30px;
-        }
-
-        .menu__list-item+.menu__list-item {
-            margin-left: 0;
-            margin-top: 25px;
-        }
-
-        .about__text-inner p:last-child {
-            padding-bottom: 0;
-        }
-
-        .gallery__video-container {
-            height: 250px;
-        }
-
-        .gallery__more-link {
-            padding: 10px 30px;
-            font-size: 16px;
-        }
-
-        .gallery__more-link:active {
-            padding: 6px 26px;
-            font-size: 14px;
-        }
-
-        .blockquote {
-            font-size: 24px;
-            padding: 38px 10px;
-        }
+    .slider-blog__text-title {
+        font-size: 18px;
+        line-height: 23px;
     }
 
-    @media (max-width: 430px) {
-        .gallery__video-container {
-            height: 222px;
-        }
+    .footer__social-list {
+        display: block;
+        font-size: 24px;
+      }
 
-        .gallery__numbers-container {
-            flex-wrap: wrap;
-        }
+      .footer__social-list + .footer__social-list {
+          margin-top: 16px;
+      }
 
-        .gallery__numbers-item {
-            flex: 0 0 50%;
-            margin-bottom: 20px;
-        }
-
-        .slider-blog__text {
-            max-width: 190px;
-        }
-
-        .slider-blog__text-title {
-            font-size: 16px;
-            line-height: 20px;
-        }
-
-        .slider-blog__text-title {
-            font-size: 14px;
-            line-height: 18px;
-        }
-
-        .slider-blog__text {
-            top: 40%;
-        }
-
-        .slick-dots {
-            bottom: 7px;
-        }
-
-        .team__item-img {
-            max-height: 280px;
-        }
-
-        .pricing__item {
-            padding: 20px 28px;
-        }
-
-        .pricing__inner {
-            padding: 0px 14px;
-        }
-
-        .pricing__item-price {
-            font-size: 29px;
-            line-height: 33px;
-        }
+      .footer__logo {
+        padding: 20px 0;
     }
 
-    @media (max-width: 360px) {
-        .section-page {
-            padding: 50px 0;
-        }
 
-        .title {
-            font-size: 22px;
-            line-height: 30px;
-        }
+}
 
-        span.streak {
-            font-size: 27px;
-            line-height: 51px;
-        }
-
-        .header__title {
-            font-size: 86px;
-            line-height: 108px;
-        }
-
-        .header__subtitle {
-            font-size: 14px;
-            line-height: 24px;
-        }
-
-        .school__title {
-            padding-bottom: 50px;
-        }
-
-        .best__title {
-            padding-top: 50px;
-        }
-
-        .blockquote {
-            font-size: 20px;
-            line-height: 30px;
-        }
-
-        .gallery__filter-btn .gallery__btn {
-            display: block;
-        }
-
-        .gallery__btn {
-            margin-bottom: 20px;
-        }
-
-        .gallery__btn:last-child {
-            margin-bottom: 35px;
-        }
-
-        .gallery__title,
-        .gallery__more,
-        .blockquote {
-            margin-bottom: 55px;
-        }
-
-        .gallery__video-img {
-            max-width: 35%;
-        }
-
-        .gallery__video-container {
-            height: 180px;
-        }
-
-        .gallery__numbers {
-            padding: 48px 10px 0;
-        }
-
-        .gallery__numbers-item {
-            font-size: 26px;
-            line-height: 44px;
-        }
-
-        .slider-blog__text {
-            max-width: 174px;
-        }
-
-        .slider-blog__title,
-        .team__title,
-        .pricing__title {
-            margin-bottom: 50px;
-        }
-
-        .slick-dots button {
-            width: 6px;
-            height: 6px;
-        }
-
-        .slick-dots li+li {
-            margin-left: 8px;
-        }
+@media (max-width: 470px) {
+    .title {
+        font-size: 27px;
+        line-height: 33px;
     }
+
+    span.streak {
+        font-size: 28px;
+        line-height: 57px;
+    }
+
+    .header__title {
+        font-size: 96px;
+        line-height: 114px;
+    }
+
+    .header__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .menu__list-link {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+
+    .about__text-inner p:last-child {
+        padding-bottom: 0;
+    }
+
+    .gallery__video-container {
+        height: 250px;
+    }
+
+    .gallery__more-link {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .gallery__more-link:active {
+        padding: 6px 26px;
+        font-size: 14px;
+    }
+
+    .blockquote {
+        font-size: 24px;
+        padding: 38px 10px;
+    }
+
+    .connection__form button {
+        padding: 12px 38px;
+        font-size: 16px;
+    }
+
+    .connection__form button:active {
+        padding: 10px 30px;
+       margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .connection__form textarea {
+        padding-bottom: 50px;
+        margin: 30px 0 40px;
+        min-height: 104px;
+    }
+
+    .connection__form input {
+          margin-bottom: 18px;
+    }
+
+    .connection__contacts {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .connection__contacts p {
+        margin-bottom: 26px;
+    }
+
+    .connection__form input::placeholder,
+    .connection__form textarea::placeholder {
+        max-width: 260px;
+        font-size: 14px;
+        line-height: 16px;
+      
+    }
+
+
+}
+
+@media (max-width: 430px) {
+    .gallery__video-container {
+        height: 222px;
+    }
+
+    .gallery__numbers-container {
+        flex-wrap: wrap;
+    }
+
+    .gallery__numbers-item {
+        flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+
+    .slider-blog__text {
+        max-width: 190px;
+    }
+
+    .slider-blog__text-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .slider-blog__text-title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .slider-blog__text {
+        top: 40%;
+    }
+
+    .slick-dots {
+        bottom: 7px;
+    }
+
+    .team__item-img {
+        max-height: 280px;
+    }
+
+    .pricing__item {
+        padding: 20px 28px;
+    }
+
+    .pricing__inner {
+        padding: 0px 14px;
+    }
+
+    .pricing__item-price {
+        font-size: 29px;
+        line-height: 33px;
+    }
+
+    .gallery__filter-btn .gallery__btn {
+        display: block;
+    }
+
+    .gallery__btn {
+        margin-bottom: 20px;
+    }
+
+    .gallery__btn:last-child {
+        margin-bottom: 35px;
+    }
+
+    .footer__social-list {
+          font-size: 20px;
+          line-height: 14px;
+    }
+
+    .footer__logo {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-page {
+        padding: 50px 0;
+    }
+
+    .footer .footer__social {
+        padding: 50px 10px;
+     }
+
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    span.streak {
+        font-size: 27px;
+        line-height: 51px;
+    }
+
+    .header__title {
+        font-size: 86px;
+        line-height: 108px;
+    }
+
+    .header__subtitle {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .school__title {
+        padding-bottom: 50px;
+    }
+
+    .best__title {
+        padding-top: 50px;
+    }
+
+    .blockquote {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+   
+
+    .gallery__title,
+    .gallery__more,
+    .blockquote {
+        margin-bottom: 55px;
+    }
+
+    .gallery__video-img {
+        max-width: 35%;
+    }
+
+    .gallery__video-container {
+        height: 180px;
+    }
+
+    .gallery__numbers {
+        padding: 48px 10px 0;
+    }
+
+    .gallery__numbers-item {
+        font-size: 26px;
+        line-height: 44px;
+    }
+
+    .slider-blog__text {
+        max-width: 174px;
+    }
+
+    .slider-blog__title,
+    .team__title,
+    .pricing__title,
+    .connection__title {
+        margin-bottom: 50px;
+    }
+
+    .slick-dots button {
+        width: 6px;
+        height: 6px;
+    }
+
+    .slick-dots li+li {
+        margin-left: 8px;
+    }
+
+    .footer__logo {
+        padding: 5px 0;
+    }
+}
