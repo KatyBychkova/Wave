@@ -1,6 +1,27 @@
 $(function() {
 
-    $('.menu__btn').on('click', function() {
+
+    $(window).on("scroll", function () {
+        var scrolled = $(this).scrollTop();
+        if( scrolled > 130 ) {
+            $('.header__top').addClass('scrolled');
+            $('.header__content').addClass('margined');
+        }   
+        if( scrolled <= 130 ) {     
+            $('.header__top').removeClass('scrolled');
+            $('.header__content').removeClass('margined');
+        }
+    });
+
+	$(".menu a, .header__top-inner a, .footer__logo a").on("click", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+    	top = $(id).offset().top;
+	    $('body,html').animate({scrollTop: top}, 1500);
+	});
+
+
+    $('.menu__btn, .menu a').on('click', function() {
         $('.header__top-inner').toggleClass('header__top-inner--active');
     });
 

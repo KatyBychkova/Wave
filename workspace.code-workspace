@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "WAWE"
+		"workbench.colorTheme": "Monokai",
 	}
 }

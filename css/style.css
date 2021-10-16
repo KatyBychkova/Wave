@@ -53,6 +53,30 @@ span.streak {
     background-position-y: bottom;
 }
 
+.header__top {
+    transition: all 0.5s linear;
+}
+
+.scrolled  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; 
+    background-color: rgb(3,54,63);
+    
+}
+
+
+.scrolled div.header__top-inner{
+    padding-top: 20px;
+}
+
+.margined {
+    padding-top: 135px;
+
+}
+
 .header__top-inner {
     display: flex;
     justify-content: space-between;
