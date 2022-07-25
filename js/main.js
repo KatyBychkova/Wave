@@ -13,7 +13,7 @@ $(function() {
         }
     });
 
-	$(".menu a, .header__top-inner a, .footer__logo a").on("click", function (event) {
+	$(".menu a, .header__content-inner a, .header__top-inner a, .footer__logo a").on("click", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
     	top = $(id).offset().top;
@@ -23,6 +23,16 @@ $(function() {
 
     $('.menu__btn, .menu a').on('click', function() {
         $('.header__top-inner').toggleClass('header__top-inner--active');
+    });
+
+    $(".gallery__inner").each(function() {
+        let more = $(this).find(".gallery__more-btn");
+        let hide = $(this).find(".hide-content");
+        hide.hide();
+        more.click(function() {
+            hide.slideToggle();
+            more.text(more.text() == "Скрыть" ? "Показать еще" : "Скрыть");
+        });
     });
 
     var mixer = mixitup('.gallery__content', {
